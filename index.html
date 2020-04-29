@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="dark">
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        :root {
+            --bg-color: white;
+            --fg-color: black;
+        }
+        :root.dark {
+            --bg-color: black;
+            --fg-color: white;
+        }
+        html {
+            background-color: var(--bg-color);
+        }
+        button {
+            background-color: var(--fg-color);
+            color: var(--bg-color);
+        }
+    </style>
+  </head>
+  <body>
+        <button onclick="document.getElementsByTagName('html')[0].classList.toggle('dark');">Toggle Dark Mode</button>
+  </body>
+</html>
